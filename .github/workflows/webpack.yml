@@ -32,5 +32,5 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          ./dist/South Plus 视频链接播放器.user.js
+          ./dist/South Plus 视频链接播放器.meta.js
           ./dist/South Plus 视频链接播放器.user.js
