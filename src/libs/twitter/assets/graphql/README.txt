@@ -1,0 +1,1 @@
+The files in this directory are copied from https://github.com/BANKA2017/twitter-monitor/tree/d67e87637b03af9b3ec257e6503895a5973dd104/libs/assets/graphql/

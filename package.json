@@ -1,0 +1,46 @@
+{
+  "name": "south-plus-video-player",
+  "version": "0.5.0.beta",
+  "description": "自动播放视频链接",
+  "author": "大碗宽面wtw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigbowl-wtw/south-plus-video-player/issues"
+  },
+  "homepage": "https://greasyfork.org/zh-CN/scripts/457637",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/*.{js,ts}' --fix",
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/crypto-js": "^4.1.1",
+    "@types/jquery": "^3.5.16",
+    "@types/node": "^20.3.1",
+    "@types/tampermonkey": "^4.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "glob": "^10.3.1",
+    "gm-requests": "github:bigbowl-wtw/TampermonkeyRequests",
+    "hls.js": "^1.4.6",
+    "html-loader": "^4.2.0",
+    "prettier": "^2.8.8",
+    "text-loader": "^0.0.1",
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.0.4",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-glob-entry": "^2.1.1",
+    "webpack-userscript": "^3.2.2"
+  }
+}

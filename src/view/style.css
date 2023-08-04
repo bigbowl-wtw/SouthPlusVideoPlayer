@@ -1,0 +1,134 @@
+.gm-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+.gm-btn {
+    border: 1px solid;
+    padding: 5px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    line-height: 20px;
+}
+.gm-btn:hover {
+    cursor: pointer;
+}
+.gm-btn-primary {
+    background-color: #1f883d;
+    color: #fff;
+    margin-left: 10px;
+}
+.gm-btn-primary:hover {
+    background-color: #0f672b;
+}
+.gm-btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+.gm-btn-secondary:hover {
+    background-color: #5a6268;
+}
+.gm-btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.gm-btn-danger:hover {
+    background-color: #bd2130;
+}
+.gm-dialog-footer {
+    text-align: right;
+    margin-top: 20px;
+}
+.pin {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 12px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 0 rgba(208, 215, 222, 0.2);
+    transition: background-color 0.3s ease;
+    transition-property: color, background-color, box-shadow, border-color;
+}
+.pin:hover {
+    background-color: #f6f7fa;
+}
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-spinner {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user-details {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.user-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+.user-id {
+    font-size: 14px;
+    color: #666;
+}
+.success-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+}
