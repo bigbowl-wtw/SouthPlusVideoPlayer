@@ -123,12 +123,8 @@ export function insertIFrameElement(
 }
 
 function toNumber(version: string): number[] {
-    const versionMap = { alpha: '-2', beta: '-1' };
-    const testVersionReg = /alpha|beta/;
-    return version
-        .split('.')
-        .map(x => (testVersionReg.test(x) ? versionMap[x] : x))
-        .map(x => parseInt(x, 10));
+    const v = version.replace('alpha', '-2').replace('beta', '-1');
+    return v.split('.').map(x => parseInt(x, 10));
 }
 
 function shiftDefault<T = unknown>(array: T[], default_: T): T {

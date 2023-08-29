@@ -19,6 +19,8 @@ export function TwitterAPI(ct0?: string): ITwitterAPI {
             user: new UserService(auth),
             tweet: new TweetService(auth),
         };
+    } else if (ct0 && ct0 !== '') {
+        api.account.setCSRFToken(ct0);
     }
     return api;
 }

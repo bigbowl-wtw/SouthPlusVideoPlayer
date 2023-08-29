@@ -127,7 +127,7 @@ module.exports = {
                     '*://spring-plus.net/read.php*',
                     '*://summer-plus.net/read.php*',
                     '*://white-plus.net/read.php*',
-                    '*://localhost:9527/*',
+                    // '*://localhost:9527/*',
                 ],
                 require: [
                     'https://cdn.jsdelivr.net/npm/hls.js@1.4.4/dist/hls.min.js',
