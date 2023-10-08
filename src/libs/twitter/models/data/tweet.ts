@@ -77,8 +77,7 @@ export class TweetMeida implements IMedia {
     constructor(media: RawMedum) {
         this.poster = media.media_url_https;
         this.durationMs = media.video_info.duration_millis;
-        const variants = media.video_info.variants;
-        variants
+        const variants = media.video_info.variants
             .map(x => {
                 if (x.bitrate === undefined) x.bitrate = Infinity;
                 return x;
